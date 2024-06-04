@@ -69,12 +69,12 @@
                                 {{$conversation->getReceiver()->name}}
                             </h6>
 
-                            <small class="text-gray-700">{{$conversation->messages?->last()?->created_at?->shortAbsoluteDiffForHumans()}}</small>
+                            <small class="text-gray-700">{{$conversation?->messages?->last()?->created_at?->shortAbsoluteDiffForHumans()}}</small>
 
                         </div>
                         {{-- Message --}}
                         <div class="flex gap-x-2 items-center">
-                            @if ($conversation->messages?->last()?->sender_id==auth()->id())
+                            @if ($conversation?->messages?->last()?->sender_id==auth()->id())
 
 
 
