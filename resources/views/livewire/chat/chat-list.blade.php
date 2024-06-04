@@ -69,7 +69,7 @@
                                 {{$conversation->getReceiver()->name}}
                             </h6>
 
-                            <small class="text-gray-700">{{$conversation?->messages?->last()?->created_at?->shortAbsoluteDiffForHumans()}}</small> 
+                            {{-- <small class="text-gray-700">{{$conversation?->messages?->last()?->created_at?->shortAbsoluteDiffForHumans()}}</small> --}}
 
                         </div>
                         {{-- Message --}}
