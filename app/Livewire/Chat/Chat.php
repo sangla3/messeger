@@ -18,10 +18,10 @@ class Chat extends Component
 
 
        # Đánh dấu tin nhắn cho người nhận là đã đọc
-       Message::where('conversation_id',$this->selectedConversation->id)
-                ->where('receiver_id',auth()->id())
-                ->whereNull('read_at')
-                ->update(['read_at'=>now()]);
+    //    Message::where('conversation_id',$this->selectedConversation->id)
+    //             ->where('receiver_id',auth()->id())
+    //             ->whereNull('read_at')
+    //             ->update(['read_at'=>now()]);
 
 
     }
